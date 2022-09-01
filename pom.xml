@@ -23,9 +23,9 @@
 	</prerequisites>
 
 	<scm>
-		<connection>git@github.com:alexnederlof/Jasper-report-maven-plugin.git</connection>
+		<connection>scm:git:git@github.com:alexnederlof/Jasper-report-maven-plugin.git</connection>
 		<url>https://github.com/alexnederlof/Jasper-report-maven-plugin</url>
-		<developerConnection>git@github.com:alexnederlof/Jasper-report-maven-plugin.git</developerConnection>
+		<developerConnection>scm:git:git@github.com:alexnederlof/Jasper-report-maven-plugin.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 
