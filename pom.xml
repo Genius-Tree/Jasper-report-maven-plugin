@@ -15,6 +15,7 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<jasperreports.version>6.20.0</jasperreports.version>
 	</properties>
 
 	<prerequisites>
@@ -22,16 +23,20 @@
 	</prerequisites>
 
 	<scm>
-		<connection>scm:git:git@github.com:alexnederlof/Jasper-report-maven-plugin.git</connection>
-		<url>http://github.com/alexnederlof/Jasper-report-maven-plugin</url>
-		<developerConnection>scm:git:git@github.com:alexnederlof/Jasper-report-maven-plugin.git</developerConnection>
+		<connection>git@github.com:alexnederlof/Jasper-report-maven-plugin.git</connection>
+		<url>https://github.com/alexnederlof/Jasper-report-maven-plugin</url>
+		<developerConnection>git@github.com:alexnederlof/Jasper-report-maven-plugin.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 
 	<distributionManagement>
+		<repository>
+			<id>Geniustree Release</id>
+			<url>https://nexus.geniustree.io/repository/maven-releases/</url>
+		</repository>
 		<snapshotRepository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<id>Geniustree Snapshots</id>
+			<url>https://nexus.geniustree.io/repository/maven-snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
@@ -94,7 +99,7 @@
 		<dependency>
 			<groupId>net.sf.jasperreports</groupId>
 			<artifactId>jasperreports</artifactId>
-			<version>6.15.0</version>
+			<version>${jasperreports.version}</version>
 		</dependency>
 
 		<dependency>
@@ -118,7 +123,7 @@
 		<dependency>
 			<groupId>net.sf.jasperreports</groupId>
 			<artifactId>jasperreports-fonts</artifactId>
-			<version>6.15.0</version>
+			<version>${jasperreports.version}</version>
 		</dependency>
 
 		<dependency>
@@ -211,30 +216,6 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	<profiles>
-		<profile>
-			<id>release</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-gpg-plugin</artifactId>
-						<version>1.6</version>
-						<executions>
-							<execution>
-								<id>sign-artifacts</id>
-								<phase>verify</phase>
-								<goals>
-									<goal>sign</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-	</profiles>
 
 
 	<licenses>
