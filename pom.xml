@@ -7,7 +7,7 @@
 	<version>2.9-SNAPSHOT</version>
 	<name>jasperreport-plugin</name>
 	<description>A Jasper compiler plugin</description>
-	<url>http://github.com/alexnederlof/Jasper-report-maven-plugin</url>
+	<url>https://github.com/Genius-Tree/Jasper-report-maven-plugin</url>
 
 
 	<properties>
@@ -23,9 +23,9 @@
 	</prerequisites>
 
 	<scm>
-		<connection>scm:git:git@github.com:alexnederlof/Jasper-report-maven-plugin.git</connection>
-		<url>https://github.com/alexnederlof/Jasper-report-maven-plugin</url>
-		<developerConnection>scm:git:git@github.com:alexnederlof/Jasper-report-maven-plugin.git</developerConnection>
+		<connection>scm:git:git@github.com:Genius-Tree/Jasper-report-maven-plugin.git</connection>
+		<url>https://github.com/Genius-Tree/Jasper-report-maven-plugin</url>
+		<developerConnection>scm:git:git@github.com:Genius-Tree/Jasper-report-maven-plugin.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 
